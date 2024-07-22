@@ -1,0 +1,73 @@
+#NO REALIZAR SEGUIMIENTO A LOS SIGUIENTES ARCHIVOS
+
+#Archivos binarios compilados y ejecutables---
+#Estos son archivos ejecutables generados después de compilar tu código fuente. 
+#No es necesario versionarlos en tu repositorio Git 
+#porque pueden ser regenerados fácilmente a partir del código fuente.
+*.out
+*.exe
+
+#Archivos objeto generados por compilación ---
+#Los archivos objeto son generados por el compilador durante el proceso de compilación de tu código fuente. 
+#Contienen código de máquina que no es legible directamente. 
+#Al no versionarlos, evitas llenar tu repositorio con archivos que pueden ser regenerados fácilmente.
+*.o
+*.obj
+
+#Directorios donde se almacenan bin y obj---
+#Estos directorios suelen contener archivos binarios y objetos generados durante la compilación. 
+#Ignorarlos evita que se versionen todos los archivos compilados, 
+#manteniendo así el repositorio más limpio y reduciendo el tamaño.
+/bin/
+/obj/
+
+#Archivos de configuración específicos de IDEs---
+#Estos archivos y directorios de configuración específicos de IDEs 
+#son ignorados en Git para mantener el repositorio limpio y 
+#evitar conflictos entre configuraciones locales de diferentes desarrolladores. 
+#Es importante que cada desarrollador configure su entorno local según sus necesidades, 
+#pero el repositorio debe contener únicamente los archivos que son esenciales para el código fuente y 
+#la estructura del proyecto.
+.vscode/
+.idea/
+
+#Archivos de respaldo y temporales---
+#Los archivos de respaldo y temporales son generados por editores de texto durante la edición de archivos. 
+#No deben ser versionados porque son efímeros y 
+#no representan el estado final o funcional del código.
+*~
+*.swp
+
+#Archivos de logs---
+#Estos archivos contienen registros o registros de actividad durante la ejecución de un programa. 
+#Son útiles para diagnósticos temporales pero no son parte esencial del código fuente en sí mismo.
+*.log
+
+#Archivos específicos de sistema operativo---
+#Estos archivos son específicos del sistema operativo y 
+#son archivos de metadatos del mismo que no son necesarios 
+#ni relevantes para el código fuente.
+Thumbs.db
+
+#Archivos de configuración de compilación---
+#Este archivo es generado por herramientas de construcción como CMake y 
+#proporciona información para ayudar a las herramientas de edición de código. 
+#No es necesario versionarlo porque se puede regenerar fácilmente.
+compile_commands.json
+
+#Archivos de configuración específicos de proyecto---
+#Estos archivos son específicos de Eclipse y contienen configuraciones del proyecto que son locales y 
+#específicas del entorno de desarrollo de cada desarrollador.
+.project
+.cproject
+
+#Archivos de dependencias de paquetes (si corresponde)
+#Contiene bibliotecas y dependencias de terceros descargadas para el proyecto. 
+#Estas dependencias pueden ser actualizadas o instaladas automáticamente, 
+#por lo que no es necesario ni recomendable versionarlas en el repositorio Git.
+vendor/
+
+#ANEXO
+# * se utiliza como una coincidencia comodín.
+# / se usa para ignorar las rutas relativas al archivo .gitignore.
+# # es usado para agregar comentarios.
